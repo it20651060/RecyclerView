@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">intentProject</string>
+    <string name="intent_view_number1">Number 1</string>
+    <string name="intent_view_number2">Number 2</string>
+    <string name="intent_et_number1">Enter Number One</string>
+    <string name="intent_et_number22">Enter Number  Two</string>
+    <string name="intent_et_number2">Enter Number Two</string>
+    <string name="intent_btn_ok">OK</string>
+    <string name="intent_view_answer" />
+    <string name="intent_btn_plus">+</string>
+    <string name="intent_btn_minus">-</string>
+    <string name="intent_btn_multiply">*</string>
+    <string name="intent_btn_division">/</string>
+    <string name="intent_view_toastView">Openning Calculetor</string>
 </resources>

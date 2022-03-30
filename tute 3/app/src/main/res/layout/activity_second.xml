@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
-    android:backgroundTint="#C6121212"
-    tools:context=".MainActivity">
+    android:background="#A41B1A1A"
+    tools:context=".SecondActivity">
 
     <TextView
         android:id="@+id/intent_view_number2"
@@ -61,17 +60,62 @@
         app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toEndOf="@+id/intent_view_number2" />
 
-    <Button
-        android:id="@+id/intent_btn_ok"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
-        android:onClick="openSecond"
-        android:text="@string/intent_btn_ok"
-        app:iconTint="#FFFFFF"
+    <TextView
+        android:id="@+id/intent_view_answer"
+        android:layout_width="291dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/intent_view_answer"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/intent_et_number2" />
+
+    <Button
+        android:id="@+id/intent_btn_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="112dp"
+        android:onClick="add"
+        android:text="@string/intent_btn_plus"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intent_view_answer" />
+
+    <Button
+        android:id="@+id/intent_btn_minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:onClick="minus"
+        android:text="@string/intent_btn_minus"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/intent_btn_plus"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/intent_btn_multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:onClick="multiply"
+        android:text="@string/intent_btn_multiply"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intent_btn_plus" />
+
+    <Button
+        android:id="@+id/intent_btn_division"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:onClick="devide"
+        android:text="@string/intent_btn_division"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/intent_btn_multiply"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
